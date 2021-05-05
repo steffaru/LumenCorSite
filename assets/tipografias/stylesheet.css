@@ -1,0 +1,198 @@
+@font-face {
+    font-family: 'Aller';
+    src: url('Aller-Bold.eot');
+    src: url('Aller-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Aller-Bold.woff2') format('woff2'),
+        url('Aller-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aller';
+    src: url('Aller-Italic.eot');
+    src: url('Aller-Italic.eot?#iefix') format('embedded-opentype'),
+        url('Aller-Italic.woff2') format('woff2'),
+        url('Aller-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aller';
+    src: url('Aller-BoldItalic.eot');
+    src: url('Aller-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Aller-BoldItalic.woff2') format('woff2'),
+        url('Aller-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aller';
+    src: url('Aller-Light.eot');
+    src: url('Aller-Light.eot?#iefix') format('embedded-opentype'),
+        url('Aller-Light.woff2') format('woff2'),
+        url('Aller-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aller';
+    src: url('Aller-LightItalic.eot');
+    src: url('Aller-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('Aller-LightItalic.woff2') format('woff2'),
+        url('Aller-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aller';
+    src: url('Aller.eot');
+    src: url('Aller.eot?#iefix') format('embedded-opentype'),
+        url('Aller.woff2') format('woff2'),
+        url('Aller.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aller Display';
+    src: url('AllerDisplay.eot');
+    src: url('AllerDisplay.eot?#iefix') format('embedded-opentype'),
+        url('AllerDisplay.woff2') format('woff2'),
+        url('AllerDisplay.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Boxing Wizards';
+    src: url('BoxingWizards-Regular.eot');
+    src: url('BoxingWizards-Regular.eot?#iefix') format('embedded-opentype'),
+        url('BoxingWizards-Regular.woff2') format('woff2'),
+        url('BoxingWizards-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'another shabby';
+    src: url('anothershabby.eot');
+    src: url('anothershabby.eot?#iefix') format('embedded-opentype'),
+        url('anothershabby.woff2') format('woff2'),
+        url('anothershabby.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aller';
+    src: url('Aller-BoldItalic.eot');
+    src: url('Aller-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Aller-BoldItalic.woff2') format('woff2'),
+        url('Aller-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aller';
+    src: url('Aller-Italic.eot');
+    src: url('Aller-Italic.eot?#iefix') format('embedded-opentype'),
+        url('Aller-Italic.woff2') format('woff2'),
+        url('Aller-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aller';
+    src: url('Aller-Bold.eot');
+    src: url('Aller-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Aller-Bold.woff2') format('woff2'),
+        url('Aller-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aller';
+    src: url('Aller-Light.eot');
+    src: url('Aller-Light.eot?#iefix') format('embedded-opentype'),
+        url('Aller-Light.woff2') format('woff2'),
+        url('Aller-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aller';
+    src: url('Aller-LightItalic.eot');
+    src: url('Aller-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('Aller-LightItalic.woff2') format('woff2'),
+        url('Aller-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aller';
+    src: url('Aller.eot');
+    src: url('Aller.eot?#iefix') format('embedded-opentype'),
+        url('Aller.woff2') format('woff2'),
+        url('Aller.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Boxing Wizards';
+    src: url('BoxingWizards-Regular.eot');
+    src: url('BoxingWizards-Regular.eot?#iefix') format('embedded-opentype'),
+        url('BoxingWizards-Regular.woff2') format('woff2'),
+        url('BoxingWizards-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aller Display';
+    src: url('AllerDisplay.eot');
+    src: url('AllerDisplay.eot?#iefix') format('embedded-opentype'),
+        url('AllerDisplay.woff2') format('woff2'),
+        url('AllerDisplay.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'another shabby';
+    src: url('anothershabby.eot');
+    src: url('anothershabby.eot?#iefix') format('embedded-opentype'),
+        url('anothershabby.woff2') format('woff2'),
+        url('anothershabby.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
