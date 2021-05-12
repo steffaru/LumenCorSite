@@ -1,88 +1,121 @@
-* {
-    margin: 0 !important;
-    padding: 0 !important;
-    max-width: 100% !important;
-}
-
-
-/*Footer*/
-
-.footer-social {
-    background-color: #eaeaea;
-    width: 100%;
-}
-
-.footer-social div a i {
-    font-size: 30px;
-    color: #707070;
-}
-
-.footer-lists ul {
-    list-style: none;
-}
-
-.footer-lists h3 {
-    color: #707070;
-    font-family: "Aller";
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-}
-
-.footer-lists a h3 {
-    display: none;
-}
-
-.line {
-    height: 1px;
-    width: 100%;
-    background-color: #707070;
-}
-
-.footer-lists a,
-.footer-lists p {
-    font-family: "Aller";
-    color: #707070;
-    text-decoration: none;
-    font-size: 14px;
-}
-
-.logo img {
-    width: 80%
-}
-
-@media (max-width:905px) {
-    .footer-lists li,
-    .line {
-        display: none;
+    * {
+        margin: 0 !important;
+        padding: 0 !important;
+        max-width: 100% !important;
     }
-    .logo-footer {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding-top: 1rem !important;
-        padding-bottom: 2rem !important;
+    
+    .prueba {
+        border: 1px solid red;
     }
-    .footer-lists a h3 {
-        display: block;
-        text-decoration: none;
+    /*body-home*/
+    
+    .home {
+        background-color: #f7f7e7;
+    }
+    
+    .home h2 {
+        font-family: 'Boxing Wizards';
+        color: #b41e1e;
+        font-size: 2.4rem;
+    }
+    
+    .contenido-home-donar,
+    .contenido-posadero {
+        background-color: #f3f3f3;
         color: #707070;
-        font-size: 1.3rem;
-        margin-left: 0.5rem !important;
-        margin-right: 0.3rem !important;
     }
-    .delete {
-        display: none;
+    
+    .contenido-mapa {
+        color: #707070;
     }
-}
-
-@media (max-width:575px) {
-    .footer-lists a h3 {
-        margin-top: 0.5rem !important;
+    
+    .contenido-home-donar h3,
+    .contenido-home-donar button,
+    .contenido-home-donar p {
+        font-family: 'Aller';
+        font-weight: bolder;
     }
-}
-
-
-/*Footer*/
+    
+    .line {
+        width: 400px;
+        justify-content: center;
+        height: 2px;
+        background-color: #707070bc;
+    }
+    
+    .card {
+        -webkit-box-shadow: 10px 10px 29px -27px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 10px 10px 29px -27px rgba(0, 0, 0, 0.75);
+        box-shadow: 10px 10px 29px -27px rgba(0, 0, 0, 0.75);
+        border-radius: 30px;
+        text-align: center;
+        font-family: "Aller";
+        background-color: #f3f3f3;
+        height: auto;
+    }
+    
+    @media (max-width:768px) {
+        .line {
+            display: none !important;
+        }
+        h3 {
+            margin-top: 2rem !important;
+        }
+    }
+    
+    .card h5,
+    .card h4 {
+        font-weight: bold;
+        color: #707070;
+    }
+    
+    .card p {
+        font-size: small;
+        color: #707070;
+    }
+    
+    .card button {
+        color: #f3f3f3;
+    }
+    
+    .card i {
+        -webkit-box-shadow: 10px 10px 29px -27px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 10px 10px 29px -27px rgba(0, 0, 0, 0.75);
+        box-shadow: 10px 10px 29px -27px rgba(0, 0, 0, 0.75);
+        color: #de8e03;
+        font-size: 1.5rem;
+        border-radius: 50%;
+        padding: 1.8rem !important;
+        background-color: white;
+    }
+    
+    .card .curso p {
+        font-size: 0.8rem;
+    }
+    
+    .card h4 {
+        font-size: small;
+    }
+    
+    .card a {
+        color: #707070;
+    }
+    
+    .contenido-posadero,
+    .contenido-posadero h3,
+    .contenido-mapa h3 {
+        font-family: 'Aller';
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    .contenido-posadero h3,
+    .contenido-mapa h3 {
+        font-size: 2rem;
+    }
+    
+    .contenido-posadero p {
+        font-size: 1rem;
+        font-weight: normal;
+    }
+    /*body-home*/
