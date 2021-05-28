@@ -1,59 +1,288 @@
-    * {
-        margin: 0 !important;
-        padding: 0 !important;
-        max-width: 100% !important;
+:root {
+    --red: #b41e1e;
+    --orange: #d27122;
+    --blue:#dc901b;
+    --gren:#3f9a46;
+    --darkBlue:#1268b0;
+    --lightBlue:#36a8e0;
+    --darkBase:#d5c9b0;
+    --mediumBase:#f4ebd7;
+    --lightBase:#fdf7e7;
+    --blackText:#000000;
+    --fontBase: 'Aller';
+    --fontComplement: 'Boxing Wizards';
+    --sizeTitle: 3rem;
+    --sizeSubTitle: 2rem;
+    --sizeSmallTitle: 1.5rem;
+    --sizeText: 1rem;
+    --sizeIcon: 1.5rem;
+}
+* {
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: 100% !important;
+}
+h1 {
+    font-size: var(--sizeTitle);
+}
+h2, h3 {
+    font-size: var(--sizeSubTitle);
+}
+h4 {
+    font-size: var(--sizeSmallTitle);
+}
+p, span, a, h5 {
+    font-size: var(--sizeText);
+}
+/* HEADER STYLES */
+header {
+    background-image: url("../imgs/media/banner.jpg");
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+}
+.blur {
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.25);
+    backdrop-filter:  blur(3px);
+} 
+.fond {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+.navbar-nav {
+    justify-content: space-evenly !important;
+    align-content: center;
+}
+.navbar-brand {
+    color: white;
+    font-family:var(--fontBase);
+    font-weight: bold;
+}
+.nav-item {
+    padding: 8px 12px !important;
+    color: white;
+}
+.nav-link > li > a , .home {
+    color: var(--blackText);
+}
+.content {
+    margin: auto !important;
+    text-align: center;
+    max-width: 85% !important;
+}
+.box {
+    border-radius: 4%;
+    margin-bottom: 3rem !important;
+}
+.box-donate {
+    min-width: 350px;
+    width: 400px;
+}
+.text-white {
+    width: 55%;
+}
+.box-cases-donate {
+    width: 100px;
+    padding: 8px 10px !important;
+    margin: 1rem 0 !important;
+}
+.btn-donate {
+    width: 100%;
+    padding: 8px 10px !important;
+    font-family: var(--fontBase) !important;
+} 
+
+
+/*body-home*/
+
+.home h2 {
+    font-family: var(--fontComplement);
+    color: var(--red); 
+}
+
+.contenido-home-donar,
+.contenido-posadero {
+    background-color: var(--mediumBase);
+}
+
+
+.contenido-home-donar h3,
+.contenido-home-donar button,
+.contenido-home-donar p {
+    font-family: var(--fontBase);
+    font-weight: bolder;
+    size: var( --sizeSubTitle);
+}
+.columnFlex {
+    justify-content: space-evenly !important;
+    padding: 2rem !important;
+    display: flex !important;
+    flex-flow: column nowrap !important;
+}
+
+.line {
+    width: 400px;
+    justify-content: center;
+    height: 2px;
+    background-color: var(--mediumBase);
+}
+
+.card,
+.box-circle{
+    -webkit-box-shadow: 10px 10px 29px -27px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 10px 10px 29px -27px rgba(0, 0, 0, 0.25);
+    box-shadow: 10px 10px 29px -27px rgba(0, 0, 0, 0.25);
+    border-radius: 5%;
+
+}
+.box-circle {
+    color: #ffffff;
+    font-size: var(--sizeIcon);
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    background: var(--orange);
+}
+.card p {
+    font-size: var(--sizeText);
+}
+
+.card button {
+    color: #f3f3f3;
+}
+.card-body {
+    flex: 1 1 auto;
+    padding: 1rem 1rem !important;
+}
+.card .curso p {
+    font-size: var(--sizeText);
+}
+
+.card a {
+    color:var(--darkBase);
+}
+.btn-warning {
+    color: white !important;
+}
+.distrib {
+    justify-content: space-evenly;
+}
+
+.contenido-posadero,
+.contenido-posadero h3,
+.contenido-mapa h3 {
+    font-family: 'Aller';
+    font-weight: bold;
+    text-align: center;
+}
+
+.contenido-posadero h3,
+.contenido-mapa h3 {
+    font-size: 2rem;
+}
+
+.contenido-posadero p {
+    font-size: 1rem;
+    font-weight: normal;
+}
+.dropdown-item {
+    padding: .25rem 1rem !important;
+    white-space: pre-wrap !important;
+    border: 0 !important;
+
+}
+.columnFlex {
+    justify-content: space-evenly !important;
+    padding: 2rem !important;
+    display: flex !important;
+    flex-flow: column nowrap !important;
+}
+
+
+/*Footer*/
+
+
+.footer-social {
+    background-color: var(--lightBase);
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.footer-social div a i {
+    font-size: 30px;
+    color: var(--orange);
+}
+.footer-lists {
+    justify-content: space-evenly !important;
+}
+.footer-lists ul {
+    list-style: none;
+}
+
+.footer-lists h4 {
+    color: var(--blackText);
+    font-family: "Aller";
+    font-weight: bold !important;
+    font-style: normal;
+    font-display: swap;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+
+.footer-lists a,
+.footer-lists p {
+    font-family: "Aller";
+    color: var(--blackText);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.logo img {
+    width: 50%
+}
+.logo-footer {
+    align-self: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+}
+
+
+@media (max-width:905px) {
+    .footer-lists li, .line{
+        display: none;
     }
-    
-    .prueba {
-        border: 1px solid red;
-    }
-    /*body-home*/
-    
-    .home {
-        background-color: #f7f7e7;
-    }
-    
-    .home h2 {
-        font-family: 'Boxing Wizards';
-        color: #b41e1e;
-        font-size: 2.4rem;
-    }
-    
-    .contenido-home-donar,
-    .contenido-posadero {
-        background-color: #f3f3f3;
-        color: #707070;
-    }
-    
-    .contenido-mapa {
-        color: #707070;
-    }
-    
-    .contenido-home-donar h3,
-    .contenido-home-donar button,
-    .contenido-home-donar p {
-        font-family: 'Aller';
-        font-weight: bolder;
-    }
-    
-    .line {
-        width: 400px;
+    .logo-footer {
+        display: flex;
+        align-items: center;
         justify-content: center;
-        height: 2px;
-        background-color: #707070bc;
+        padding-top: 1rem !important;
+        padding-bottom: 2rem !important;
     }
-    
-    .card {
-        -webkit-box-shadow: 10px 10px 29px -27px rgba(0, 0, 0, 0.75);
-        -moz-box-shadow: 10px 10px 29px -27px rgba(0, 0, 0, 0.75);
-        box-shadow: 10px 10px 29px -27px rgba(0, 0, 0, 0.75);
-        border-radius: 30px;
-        text-align: center;
-        font-family: "Aller";
-        background-color: #f3f3f3;
-        height: auto;
+    .footer-lists a h3 {
+        display: block;
+        text-decoration: none;
+        font-size: 1.3rem;
+        margin-left: 0.5rem !important;
+        margin-right: 0.3rem !important;
     }
-    
+}
+
+@media (max-width:575px) {
+    .footer-lists a h3 {
+        margin-top: 0.5rem !important;
+    }
+}
+
+
+/*Footer*/
+
+
     @media (max-width:768px) {
         .line {
             display: none !important;
@@ -62,60 +291,3 @@
             margin-top: 2rem !important;
         }
     }
-    
-    .card h5,
-    .card h4 {
-        font-weight: bold;
-        color: #707070;
-    }
-    
-    .card p {
-        font-size: small;
-        color: #707070;
-    }
-    
-    .card button {
-        color: #f3f3f3;
-    }
-    
-    .card i {
-        -webkit-box-shadow: 10px 10px 29px -27px rgba(0, 0, 0, 0.75);
-        -moz-box-shadow: 10px 10px 29px -27px rgba(0, 0, 0, 0.75);
-        box-shadow: 10px 10px 29px -27px rgba(0, 0, 0, 0.75);
-        color: #de8e03;
-        font-size: 1.5rem;
-        border-radius: 50%;
-        padding: 1.8rem !important;
-        background-color: white;
-    }
-    
-    .card .curso p {
-        font-size: 0.8rem;
-    }
-    
-    .card h4 {
-        font-size: small;
-    }
-    
-    .card a {
-        color: #707070;
-    }
-    
-    .contenido-posadero,
-    .contenido-posadero h3,
-    .contenido-mapa h3 {
-        font-family: 'Aller';
-        font-weight: bold;
-        text-align: center;
-    }
-    
-    .contenido-posadero h3,
-    .contenido-mapa h3 {
-        font-size: 2rem;
-    }
-    
-    .contenido-posadero p {
-        font-size: 1rem;
-        font-weight: normal;
-    }
-    /*body-home*/
