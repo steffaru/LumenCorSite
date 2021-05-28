@@ -76,7 +76,7 @@
     border: dashed 2px grey;
     padding:15px;
     border-radius: 15px;
-    text-align: center; 
+   
   }
   
   .datosBanco{
@@ -90,10 +90,8 @@
     font-size: xx-large;
     text-decoration: none;
   }
- 
   .voluntario{
     height: 350px;
     width: 100%;
     background:#ffe365;
-
   }
