@@ -22,8 +22,8 @@
 }
 
 * {
-    margin: 0 !important;
-    padding: 0 !important;
+    margin: 0 !important;;
+    padding: 0 !important;;
     max-width: 100% !important;
 }
 h1 {
@@ -103,7 +103,7 @@ header {
 } 
 
 
-/*body-home*/
+/*------------------  HOME ---------------*/
 
 .home h2 {
     font-family: var(--fontComplement);
@@ -209,7 +209,7 @@ header {
 }
 
 
-/*Footer*/
+/*------------------  FOOTER  ---------------*/
 
 
 .footer-social {
@@ -261,8 +261,12 @@ header {
     justify-content: flex-end;
 }
 
-    /*------------------  QUIENES SOMOS---------------*/
-
+    /*------------------  US  ---------------*/
+.act-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
 .act-flex {
     justify-content: space-between;
     display: flex;
@@ -290,6 +294,66 @@ header {
     padding: 1rem !important;
 }
     
+/*------------------  SERVICIOS ---------------*/
+
+.line-servicios-2 {
+    display: block;
+    width: 60%;
+    height: 1.5px;
+    background-color: var(--orange);
+}
+.box-services > .card-body {
+    flex: 1 1 auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+}
+
+.servicios-2 h4,
+.servicios-2 p,
+.servicios-5 h4,
+.servicios-5 p {
+    color: white;
+}
+
+.servicios-2 .card,
+.servicios-5 .card {
+    background-color: var(--orange);
+    border-radius: 35px;
+}
+
+.servicios-2 .card {
+    height: 200px;
+}
+
+.servicios-5 .card {
+    height: 210px;
+}
+
+.servicios-3 img {
+    max-width: 100%;
+    width: 100%;
+}
+
+.servicios-3 .item {
+    display: block;
+    margin: 15px 0;
+}
+
+.servicios-4,
+.servicios-posadero {
+    background-color: var(--lightBase);
+}
+
+.servicios-voluntario {
+    background-color: var(--lightBase) ;
+}
+
+.servicios-voluntario > a {
+    color: white;
+}
 
 @media (max-width:905px) {
     .footer-lists li, .line{
@@ -320,12 +384,16 @@ header {
 
 /*Footer*/
 
-
-    @media (max-width:768px) {
-        .line {
-            display: none !important;
-        }
-        h3 {
-            margin-top: 2rem !important;
-        }
+@media (max-width:768px) {
+    .line {
+        display: none !important;
     }
+    h3 {
+        margin-top: 2rem !important;
+    }
+}
+@media (max-width: 768px) {
+    .line-servicios-2 {
+        display: none;
+    }
+}
