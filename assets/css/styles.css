@@ -13,7 +13,7 @@
     --fontBase: 'Aller';
     --fontComplement: 'Boxing Wizards';
     --fontHead: 'Another Shabby';
-    --sizeTitle: 3rem;
+    --sizeTitle: 4rem;
     --sizeSubTitle: 2rem;
     --sizeSmallTitle: 1.5rem;
     --sizeMiniTitle:.5rem;
@@ -106,8 +106,9 @@ header {
 /*------------------  HOME ---------------*/
 
 .home h2 {
-    font-family: var(--fontComplement);
-    color: var(--red); 
+    font-family: var(--fontBase);
+    color: var(--red);
+    font-weight: bold;
 }
 
 .contenido-home-donar,
