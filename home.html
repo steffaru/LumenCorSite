@@ -72,10 +72,10 @@
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link  " href="./notices.html" tabindex="-1" aria-disabled="true">Noticias</a>
+                                <a class="nav-link" href="./notices.html" tabindex="-1" aria-disabled="true">Noticias</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link  " href="./contact_us.html" tabindex="-1" aria-disabled="true">Contactanos</a>
+                                <a class="nav-link" href="./contact_us.html" tabindex="-1" aria-disabled="true">Contactanos</a>
                             </li>
                         </ul>
                     </div>
@@ -88,15 +88,18 @@
                         <div class="box box-donate bg-light py-4">
                             <div class="row">
                                 <div class="col-12 my-2 mb-4"><h2 class="text-center">LA AYUDA SOS VOS</h2></div>
-                                <div class="col-4 text-center"><input type="button" class="btn btn-lg btn-outline-danger text-secondary  box-cases-donate" value="$2000"></input></div>
-                                <div class="col-4 text-center"><input type="button" class="btn btn-lg btn-outline-danger text-secondary  box-cases-donate" value="$4000"></input></div>
-                                <div class="col-4 text-center"><input type="button" class="btn btn-lg btn-outline-danger text-secondary  box-cases-donate" value="$7000"></input></div>
-                                <div class="col-4 text-center"><input type="button" class="btn btn-lg btn-outline-danger text-secondary  box-cases-donate" value="$10000"></input></div>
-                                <div class="col-4 text-center"><input type="button" class="btn btn-lg btn-outline-danger text-secondary  box-cases-donate" value="$15000"></input></div>
-                                <div class="col-4 text-center"><input type="button" class="btn btn-lg btn-outline-danger text-secondary  box-cases-donate" value="$20000"></input></div>
+                                <div class="col-4 text-center"><input type="button" class="btn btn-lg btn-outline-danger text-secondary  box-cases-donate" value="$2000" target="_blank"></input></div>
+                                <div class="col-4 text-center"><input type="button" class="btn btn-lg btn-outline-danger text-secondary  box-cases-donate" value="$4000"  target="_blank"></input></div>
+                                <div class="col-4 text-center"><input type="button" class="btn btn-lg btn-outline-danger text-secondary  box-cases-donate" value="$7000"  target="_blank"></input></div>
+                                <div class="col-4 text-center"><input type="button" class="btn btn-lg btn-outline-danger text-secondary  box-cases-donate" value="$10000"  target="_blank"></input></div>
+                                <div class="col-4 text-center"><input type="button" class="btn btn-lg btn-outline-danger text-secondary  box-cases-donate" value="$15000"  target="_blank"></input></div>
+                                <div class="col-4 text-center"><input type="button" class="btn btn-lg btn-outline-danger text-secondary  box-cases-donate" value="$20000"  target="_blank"></input></div>
 
                                 <div class="row">
-                                    <div class="col-12 text-center mt-1 p-3"><button type="button" class="btn btn-danger btn-lg text-center btn-donate">Quiero Donar</button></div>
+                                    <button type="button" data-toggle="modal" data-target="#myModal">Launch modal</button>
+                                    <div class="col-12 text-center mt-1 p-3">
+                                        <a href="./donations.html" class="btn btn-danger btn-lg text-center btn-donate" target="_blank">Quiero Donar</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -106,9 +109,7 @@
                     <!---TEXTO--->
                     <div class="col-8 text-white  d-flex align-items-center">
                          <div class="">
-                            <p class="text-start d-none d-lg-block">Somos una red de voluntarios que asiste a personas en situacion de calle.
-                            Brindamos asistencia integral : habitaciones, alimentaria, laboral, psicologica,
-                            juridica e indumentaria.
+                            <p class="text-start d-none d-lg-block">Somos una red de voluntarios que asiste a personas en situacion de calle. Brindamos asistencia integral : habitaciones, alimentaria, laboral, psicologica, juridica e indumentaria.
                             <br>
                             <br>
                             Sumate a Lumen Cor hay muchas maneras de ayudar.
@@ -131,9 +132,9 @@
                 <div class="col-md-5 contenido-home-donar columnFlex">
                     <div class="content">
                         <h2 class="my-2 text-center"> +30000</h2>
-                        <h3 class="my-2 text-center">Comidas diarias</h3>
-                        <p class="my-5">Brindamos comidas todos los días a las 11 hs, en la Parroquia Nuestra Señora del Loreto. Ubicación: Avenida Coronel Diaz 2680, junto a Parque las Heras. CABA.</p>
-                        <button type="button" onclick="window.location.href='/donar'" class="btn btn-danger  w-100 py-2 my-2 anchor">
+                        <h4 class="my-2 text-center">Raciones de Alimentos</h4>
+                        <p class="my-2">Brindamos comidas todos los días a las 11 hs, en la Parroquia Nuestra Señora del Loreto. Ubicación: Avenida Coronel Diaz 2680, junto a Parque las Heras. CABA.</p>
+                        <button type="button" onclick="window.location.href='./donations.html'" target="_blank" class="btn btn-danger  w-100 py-2 my-2 anchor">
                             <p>QUIERO DONAR</p>
                         </button>
                     </div>
@@ -145,7 +146,7 @@
                     <div class="line"></div>
                 </div>
 
-                <div class="col-md-6 my-4 px-5">
+                <div class="col-md-5 my-4">
                     <div class="card box-shadow box">
                         <div class="card-body">
                             <h4 class="card-title my-4">¡Sé Voluntario!</h4>
@@ -156,10 +157,10 @@
                     </div>
                 </div>
 
-                <div class="col-md-6 my-4 px-5 ">
+                <div class="col-md-5 my-4">
                     <div class="card box-shadowbox">
                         <div class="card-body curso px-3">
-                            <h4 class="card-title my-4 p-4">Cursos</h4>
+                            <h4 class="card-title my-4">Cursos</h4>
                             <div class="row my-3 distrib">
                                 <div class="col-md-4 box-circle p-4">
                                     <i class="fas fa-hands-helping"></i>
@@ -167,7 +168,7 @@
                                 <div class="col-md-8 text-start">
                                     <h5 class="mb-3">Curso Avanzado de ONGs</h5>
                                     <p class="card-text">El plan de estudios cuenta con 6 módulos diseñados para generar resultados, desde crear tu propia ONG... <br/>
-                                        <a href="/services.html">Ver más</a>
+                                        <a href="./services.html">Ver más</a>
                                     </p>
                                 </div>
                             </div>
@@ -178,7 +179,7 @@
                                 <div class="col-md-8 text-start">
                                     <h5 class="mb-3">Taller de Pintura</h5>
                                     <p class="card-text ">Taller de pintura orientados a los asistidos en el Posadero de la Parroquia Ntra. Sra. de Loreto... <br/>
-                                        <a href="/services.html">Ver más</a>
+                                        <a href="./services.html">Ver más</a>
                                     </p>
                                 </div>
                             </div>
@@ -189,7 +190,7 @@
                                 <div class="col-md-8 text-start">
                                     <h5 class="mb-3">Taller de Musica</h5>
                                     <p class="card-text">Taller de música orientado a los asistidos en el Posadero de la Parroquia Ntra. Sra de Guadalupe... <br/>
-                                        <a href="/services.htm">Ver más</a></p>
+                                        <a href="./services.html">Ver más</a></p>
                                 </div>
                             </div>
                         </div>
@@ -229,111 +230,108 @@
             </div>
         </div>
         <div class="row footer-lists my-4 content">
-            <div class="col-lg-2 col-xs-12 ">
-                <a href="#home">
+            <div class="col-lg-2 col-xs-12 ms-2 my-4">
+                <a href="./home.html">
                     <h4 class="text-center">Lumen Cor</h4>
                 </a>
-                <div class="row"><span class="my-3 mx-1 line"></span></div>
+                <div class="row d-flex justify-content-center"><span class="my-3 mx-1 line"></span></div>
                 <ul>
-                    <a href="#us">
+                    <a href="./us.html">
                         <li>Nosotros</li>
                     </a>
-                    <a href="#acciones">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfinkfhhaOtkCR_4k6zC4qyL9z8kgk9JXZS862STKqtmSlpHQ/viewform" target="_blank">
                         <li>Sé voluntario</li>
                     </a>
-                    <a href="#servicios">
+                    <a href="https://www.posaderos.org/login" target="_blank">
                         <li>Sé posadero</li>
                     </a>
-                    <a href="#contacto">
+                    <a href="./contact_us.html">
                         <li>Contacto</li>
                     </a>
                 </ul>
             </div>
-            <div class="col-lg-2 col-xs-12 ms-2">
-                <a href="#servicios">
+            <div class="col-lg-2 col-xs-12 ms-2 my-4">
+                <a href="./services.html">
                     <h4 class="text-center">Servicios</h4>
                 </a>
-                <div class="row"><span class="my-3 line"></span></div>
+                <div class="row d-flex justify-content-center"><span class="my-3 line"></span></div>
                 <ul>
-                    <a href="#servicios">
-                        <li>Desayuno</li>
+                    <a href="./services.html">
+                        <li>Raciones de Alimentos</li>
                     </a>
-                    <a href="#servicios">
+                    <a href="./services.html">
                         <li>Acompañamiento</li>
                     </a>
-                    <a href="#servicios">
+                    <a href="./services.html">
                         <li>Asistencia Social</li>
                     </a>
-                    <a href="#servicios">
+                    <a href="./services.html">
                         <li>Empleo</li>
                     </a>
-                    <a href="#servicios">
+                    <a href="./services.html">
                         <li>Hospedaje</li>
                     </a>
-                    <a href="#servicios">
+                    <a href="./services.html">
                         <li>Roperito</li>
                     </a>
-                    <a href="#servicios">
+                    <a href="./services.html">
                         <li>Discapacidad</li>
                     </a>
                 </ul>
             </div>
-            <div class="col-lg-2 col-xs-12 ms-2">
-                <a href="#acciones">
-                    <h4 class="text-center">Acciones
-                    </h4>
+            <div class="col-lg-2 col-xs-12 ms-2 my-4">
+                <a href="./actions.html">
+                    <h4 class="text-center">Acciones</h4>
                 </a>
-                <div class="row"><span class="my-3 line"></span></div>
+                <div class="row d-flex justify-content-center"><span class="my-3 line"></span></div>
                 <ul>
-                    <a href="#acciones">
+                    <a href="./actions.html">
                         <li> Solidario Online</li>
                     </a>
-                    <a href="#acciones">
+                    <a href="./actions.html">
                         <li>Arte Solidario</li>
                     </a>
-                    <a href="#acciones">
+                    <a href="./actions.html">
                         <li>Una Navidad Para Todos </li>
                     </a>
-                    <a href="#acciones">
+                    <a href="./actions.html">
                         <li>Unidos Por La Caridad</li>
                     </a>
-                    <a href="#acciones">
+                    <a href="./actions.html">
                         <li>Noches De La Caridad</li>
                     </a>
                 </ul>
             </div>
-            <div class="col-lg-2 col-xs-12 ms-55">
-                <a href="#donaciones">
-                    <h4 class="text-center">Donaciones
-                    </h4>
+            <div class="col-lg-2 col-xs-12 ms-2 my-4">
+                <a href="./donations.html">
+                    <h4 class="text-center">Donaciones</h4>
                 </a>
-                <div class="row"><span class="my-3 line"></span></div>
+                <div class="row d-flex justify-content-center"><span class="my-3 line"></span></div>
                 <ul>
-                    <a href="#donaciones">
+                    <a href="./donations.html">
                         <li>Alimentos</li>
                     </a>
-                    <a href="#donaciones">
+                    <a href="./donations.html">
                         <li>Ropa De Abrigo</li>
                     </a>
-                    <a href="#donaciones">
+                    <a href="./donations.html">
                         <li>Amigo De Lumen</li>
                     </a>
-                    <a href="#donaciones">
+                    <a href="./donations.html">
                         <li>Padrinazgo</li>
                     </a>
                 </ul>
             </div>
-            <div class="col-lg-2 col-xs-12 ms-2">
-                <a href="#noticias">
-                    <h4 class="text-center">Noticias
-                    </h4>
+            <div class="col-lg-2 col-xs-12 ms-2 my-4">
+                <a href="./notices.html">
+                    <h4 class="text-center">Noticias</h4>
                 </a>
-                <div class="row"><span class="my-3 line"></span></div>
+                <div class="row d-flex justify-content-center"><span class="my-3 line"></span></div>
                 <ul>
-                    <a href="#noticias">
+                    <a href="./notices.html">
                         <li>Entrevistas</li>
                     </a>
-                    <a href="#noticias">
+                    <a href="./notices.html">
                         <li>Videos</li>
                     </a>
                 </ul>
@@ -343,8 +341,33 @@
             </div>
         </div>
     </footer>
+    <div class="modal" tabindex="-1" role="dialog" id="myModal">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Modal body text goes here.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Save changes</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script>
+        $('#myModal').on('hidden.bs.modal', function (e) {
+        // do something...
+      })
+
+    </script> 
 </body>
 
 </html>

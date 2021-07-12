@@ -14,7 +14,7 @@
     --fontComplement: 'Boxing Wizards';
     --fontHead: 'Another Shabby';
     --sizeTitle: 4rem;
-    --sizeSubTitle: 2rem;
+    --sizeSubTitle: 2.5rem;
     --sizeSmallTitle: 1.5rem;
     --sizeMiniTitle:.5rem;
     --sizeText: 1rem;
@@ -78,7 +78,9 @@ header {
 .content {
     margin: auto !important;
     text-align: center;
-    max-width: 85% !important;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
 }
 .box {
     border-radius: 4%;
@@ -118,11 +120,15 @@ header {
 
 
 .contenido-home-donar h3,
-.contenido-home-donar button,
+.contenido-home-donar a,
 .contenido-home-donar p {
     font-family: var(--fontBase);
     font-weight: bolder;
     size: var( --sizeSubTitle);
+}
+.contenido-home-donar p{
+    size: var(--sizeMiniTitle);
+    font-weight: normal;
 }
 .columnFlex {
     justify-content: space-evenly !important;
@@ -189,7 +195,7 @@ header {
 
 .contenido-posadero h3,
 .contenido-mapa h3 {
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 .contenido-posadero p {
