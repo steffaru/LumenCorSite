@@ -1,20 +1,21 @@
-@import url(./assets/fonts/fonts.css);
+@import url(../fonts/fonts.css);
 :root {
     --red: #b41e1e;
     --orange: #d27122;
-    --blue:#dc901b;
-    --gren:#3f9a46;
+    --orange_l:#dc901b;
+    --green:#3f9a46;
     --darkBlue:#1268b0;
     --lightBlue:#36a8e0;
     --darkBase:#d5c9b0;
     --mediumBase:#f4ebd7;
-    --lightBase:#fdf7e7;
+    --lightBase: ghostwhite;
     --blackText:#000000;
     --fontBase: 'Aller';
     --fontComplement: 'Boxing Wizards';
-    --fontHead: 'Another Shabby';
+    --fontHead: 'Aller';
     --sizeTitle: 4rem;
     --sizeSubTitle: 2.5rem;
+    --sizeSubAltTitle:2rem;
     --sizeSmallTitle: 1.5rem;
     --sizeMiniTitle:.5rem;
     --sizeText: 1rem;
@@ -22,15 +23,19 @@
 }
 
 * {
-    margin: 0 !important;;
-    padding: 0 !important;;
-    max-width: 100% !important;
+    margin: 0 auto !important;;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
 }
 h1 {
     font-size: var(--sizeTitle)!important;
 }
-h2, h3 {
+h2 {
     font-size: var(--sizeSubTitle);
+}
+h3 {
+    font-size: var(--sizeSubAltTitle);
+    font-weight: bold;
 }
 h4 {
     font-size: var(--sizeSmallTitle);
@@ -38,10 +43,14 @@ h4 {
 p, span, a, h5 {
     font-size: var(--sizeText);
 }
+h5 {
+    font-weight: bold;
+}
 .head-titles {
     font-size: var(--sizeSubTitle) !important;
     font-family: var(--fontHead);
     color: var(--orange);
+    font-weight: bold;
 }
 /* HEADER STYLES */
 header {
@@ -49,15 +58,16 @@ header {
     background-size: cover;
     background-position-x: center;
     background-repeat: no-repeat;
+    height: 600px;
 }
 .blur {
     width: 100%;
-    height: auto;
+    height: 600px;
     background-color: rgba(0, 0, 0, 0.25);
     backdrop-filter:  blur(3px);
 } 
 .fond {
-    background-color: rgba(255, 255, 255, 0.25);
+   background-color: rgba(248,248,255,.7);
 }
 .navbar-nav {
     justify-content: space-evenly !important;
@@ -72,8 +82,13 @@ header {
     padding: 8px 12px !important;
     color: white;
 }
-.nav-link > li > a , .home {
+li > a.nav-link , .home {
     color: var(--blackText);
+    font-family: var(--fontBase);
+    font-weight: bold;
+}
+.banner-text{
+    height:500px;
 }
 .content {
     margin: auto !important;
@@ -115,7 +130,7 @@ header {
 
 .contenido-home-donar,
 .contenido-posadero {
-    background-color: var(--mediumBase);
+    background-color: var(--lightBase);
 }
 
 
@@ -141,7 +156,7 @@ header {
     width: 400px;
     justify-content: center;
     height: 2px;
-    background-color: var(--mediumBase);
+    background-color: var(--lightBase);
 }
 
 .card,
@@ -156,30 +171,37 @@ header {
     color: #ffffff;
     font-size: var(--sizeIcon);
     border-radius: 50%;
-    height: 80px;
-    width: 80px;
+    height: 50px;
+    width: 50px;
     background: var(--orange);
+    text-align: center;
+    display: flex;
+    align-items: center;
 }
-.card p {
-    font-size: var(--sizeText);
-}
-
-.card button {
-    color: #f3f3f3;
+.card-title {
+    font-size: var(--sizeSmallTitle);
+    font-weight: bold;
 }
 .card-body {
     flex: 1 1 auto;
     padding: 1rem 1rem !important;
 }
-.card .curso p {
+.card p, .card .curso p {
     font-size: var(--sizeText);
+    font-weight: normal;
 }
 
 .card a {
-    color:var(--darkBase);
+    color:var(--orange);
 }
-.btn-warning {
-    color: white !important;
+.btn-outline-warning {
+    color: var(--orange) !important;
+    border: 1px var(--orange) solid !important;
+}
+.btn-outline-warning:hover {
+    background-color: var(--orange_l) !important;
+    border: 1px var(--orange_l) solid !important;
+    color: var(--blackText)  !important;
 }
 .distrib {
     justify-content: space-evenly;
@@ -355,11 +377,48 @@ header {
 }
 
 .servicios-voluntario {
-    background-color: var(--lightBase) ;
+    background-color: var(--lightBase);
 }
 
 .servicios-voluntario > a {
     color: white;
+}
+/*------------------  DONACIONES ---------------*/
+
+.donaciones .line-donaciones {
+    width: 100%;
+    height: 2px;
+    background-color: var(--orange_l);
+}
+.donaciones .card {
+    background-color:var(--lightBase);
+    border:1px solid var(--lightBase);
+    border-radius: 2rem;
+    -webkit-box-shadow: 10px 10px 57px -1px rgba(191, 189, 191, 1);
+    -moz-box-shadow: 10px 10px 57px -1px rgba(191, 189, 191, 1);
+    box-shadow: 10px 10px 57px -1px rgba(191, 189, 191, 1);
+}
+
+.border_dash {
+    border-radius: 2rem;
+    border: 2px dashed var(--orange_l) !important;
+}
+
+.border-mp {
+    border-radius: 2rem;
+    border: 2px var(--lightBase) !important;
+    max-width: 140px;
+}
+
+.btn-info span {
+    color: white !important;
+}
+
+.border_u i {
+    color: white;
+    font-size: 20px;
+    background-color: var(--orange);
+    border-radius: 50%;
 }
 
 @media (max-width:905px) {
